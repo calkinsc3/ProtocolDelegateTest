@@ -8,10 +8,8 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, afiDataAccessDelegate {
+class FirstViewController: UIViewController {
     
-    
-    var policyDataAccess = PolicyDAO(environment: "dev")
     var apiInteractionStarted: Bool = false
     var apiInteractionStop: Bool = false
     var apiDataMapped: Bool = false
@@ -26,8 +24,12 @@ class FirstViewController: UIViewController, afiDataAccessDelegate {
         }
     }
     
+    var policyDataAccess = PolicyDAO(environment: "dev")
+    
     override func viewDidLoad() {
+        
         self.policyDataAccess.delegate = self
+        
         do {
             try self.policyDataAccess.getData()
         } catch {
@@ -35,9 +37,6 @@ class FirstViewController: UIViewController, afiDataAccessDelegate {
         }
     }
     
-    func onSuccessPolicy(returnedPolicies: [Policy]) {
-        print("in onSuccessPolicy = \(returnedPolicies)")
-    }
     
     func apiDataReturn() -> [afiModel] {
         let policy1 = Policy()
@@ -55,6 +54,18 @@ class FirstViewController: UIViewController, afiDataAccessDelegate {
     }
     
     
+    
+}
+
+extension FirstViewController: afiDataAccessDelegate {
+    
+    func onSuccessPolicy(returnedPolicies: [Policy]) {
+        print("in onSuccessPolicy = \(returnedPolicies)")
+    }
+    
+    func onFailure() {
+        print("in OnFailure; no data")
+    }
     
 }
 

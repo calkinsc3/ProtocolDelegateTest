@@ -38,8 +38,6 @@ class PolicyDAO : afiDataAccess, afiDataAccessDelegate {
         
     }
     
-    
-    
     func getData() throws {
         
         self.delegate?.apiInteractionStarted = true
@@ -53,6 +51,8 @@ class PolicyDAO : afiDataAccess, afiDataAccessDelegate {
         
         //self.delegate?.apiDataReturnData = [policy1, policy2, policy3]
         self.delegate?.onSuccessPolicy(returnedPolicies: [policy1, policy2, policy3])
+        self.delegate?.onFailure()
+        self.delegate?.apiDataReturnData = [policy1, policy2, policy3]
         
     }
     func putData(dataToPut: [afiModel]) throws {

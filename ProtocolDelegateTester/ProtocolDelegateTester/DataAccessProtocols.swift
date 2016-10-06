@@ -24,6 +24,9 @@ protocol afiDataAccessDelegate {
     
     var apiDataReturnData: [afiModel]? { get set }
     
+    func onSuccessPolicy(returnedPolicies: [Policy])
+    func onFailure()
+    
 }
 
 protocol afiDataAccess {
@@ -43,6 +46,7 @@ protocol afiDataAccess {
 
 extension afiDataAccessDelegate {
     func onSuccessPolicy(returnedPolicies: [Policy]){}
+    func onFailure() {}
 }
 
 
