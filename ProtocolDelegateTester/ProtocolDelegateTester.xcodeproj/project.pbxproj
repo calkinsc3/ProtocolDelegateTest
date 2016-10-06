@@ -13,6 +13,9 @@
 		94206E721DA65AF900A4E8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94206E701DA65AF900A4E8C0 /* Main.storyboard */; };
 		94206E741DA65AF900A4E8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94206E731DA65AF900A4E8C0 /* Assets.xcassets */; };
 		94206E771DA65AF900A4E8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94206E751DA65AF900A4E8C0 /* LaunchScreen.storyboard */; };
+		94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */; };
+		94206E811DA65C7200A4E8C0 /* PolicyDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */; };
+		94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E821DA65CD300A4E8C0 /* PolicyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		94206E731DA65AF900A4E8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94206E761DA65AF900A4E8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94206E781DA65AF900A4E8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessProtocols.swift; sourceTree = "<group>"; };
+		94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyDAO.swift; sourceTree = "<group>"; };
+		94206E821DA65CD300A4E8C0 /* PolicyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */,
+				94206E861DA65EA400A4E8C0 /* Model */,
+				94206E841DA65E8900A4E8C0 /* Controllers */,
+				94206E851DA65E9900A4E8C0 /* View */,
+				94206E871DA65EAC00A4E8C0 /* Util */,
+			);
+			path = ProtocolDelegateTester;
+			sourceTree = "<group>";
+		};
+		94206E841DA65E8900A4E8C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */,
 				94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		94206E851DA65E9900A4E8C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				94206E701DA65AF900A4E8C0 /* Main.storyboard */,
 				94206E731DA65AF900A4E8C0 /* Assets.xcassets */,
 				94206E751DA65AF900A4E8C0 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		94206E861DA65EA400A4E8C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */,
+				94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */,
+				94206E821DA65CD300A4E8C0 /* PolicyModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		94206E871DA65EAC00A4E8C0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
 				94206E781DA65AF900A4E8C0 /* Info.plist */,
 			);
-			path = ProtocolDelegateTester;
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */,
+				94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */,
 				94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */,
+				94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */,
+				94206E811DA65C7200A4E8C0 /* PolicyDAO.swift in Sources */,
 				94206E6D1DA65AF900A4E8C0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
