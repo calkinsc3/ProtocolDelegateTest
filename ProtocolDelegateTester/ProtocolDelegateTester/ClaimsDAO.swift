@@ -56,6 +56,12 @@ class ClaimsDAO: afiDataAccess, afiDataAccessDelegate {
                 if let claimName = givenclaim.nameOnClaims {
                     claimsURLComponents.queryItems?.append(URLQueryItem(name: "name", value: claimName))
                 }
+                if let claimIncident = givenclaim.incidentDescr {
+                    claimsURLComponents.queryItems?.append(URLQueryItem(name: "incidentDesr", value: claimIncident))
+                }
+                if let claimsLocation = givenclaim.locationOfIncient {
+                    claimsURLComponents.queryItems?.append(URLQueryItem(name: "incidentLocation", value: claimsLocation))
+                }
             }
         }
         
