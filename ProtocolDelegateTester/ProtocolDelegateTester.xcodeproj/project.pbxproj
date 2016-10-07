@@ -16,6 +16,8 @@
 		94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */; };
 		94206E811DA65C7200A4E8C0 /* PolicyDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */; };
 		94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E821DA65CD300A4E8C0 /* PolicyModel.swift */; };
+		94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E881DA7AD6500A4E8C0 /* ClaimsDAO.swift */; };
+		94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessProtocols.swift; sourceTree = "<group>"; };
 		94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyDAO.swift; sourceTree = "<group>"; };
 		94206E821DA65CD300A4E8C0 /* PolicyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyModel.swift; sourceTree = "<group>"; };
+		94206E881DA7AD6500A4E8C0 /* ClaimsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimsDAO.swift; sourceTree = "<group>"; };
+		94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +97,10 @@
 		94206E861DA65EA400A4E8C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94206E8A1DA7B06C00A4E8C0 /* DAO */,
 				94206E7E1DA65BB400A4E8C0 /* DataAccessProtocols.swift */,
-				94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */,
 				94206E821DA65CD300A4E8C0 /* PolicyModel.swift */,
+				94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -106,6 +111,15 @@
 				94206E781DA65AF900A4E8C0 /* Info.plist */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		94206E8A1DA7B06C00A4E8C0 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				94206E801DA65C7200A4E8C0 /* PolicyDAO.swift */,
+				94206E881DA7AD6500A4E8C0 /* ClaimsDAO.swift */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */,
 				94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */,
+				94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */,
 				94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */,
 				94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */,
 				94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */,
