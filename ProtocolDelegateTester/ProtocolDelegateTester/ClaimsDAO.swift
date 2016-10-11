@@ -47,6 +47,7 @@ class ClaimsDAO: afiDataAccess, afiDataAccessDelegate {
         
         claimsURLComponents.query = "name=Bill"
         
+        
         for claim in dataToPost {
             if let givenclaim = claim as? ClaimsModel {
                 //Add query params
