@@ -54,6 +54,20 @@ class FirstViewController: UIViewController {
     }
     
     
+    @IBAction func pushMeAction(_ sender: AnyObject) {
+        print("pushMeAction")
+        self.performSegue(withIdentifier: (self.title == "SecondInStack" ? "SecondSegue" : "TestSegue" ), sender: self)
+        
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        print("shouldPerformSegue")
+        return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("prepare")
+    }
     
 }
 

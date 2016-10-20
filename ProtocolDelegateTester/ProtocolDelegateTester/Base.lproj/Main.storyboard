@@ -3,10 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,20 +30,86 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-Sw-35i">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6fL-00-QKn"/>
+                                </constraints>
+                                <state key="normal" title="Push Me"/>
+                                <connections>
+                                    <action selector="pushMeAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="WwN-Aj-pzn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="lAi-Sw-35i" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="25.5" id="JA4-Vk-nkq"/>
+                            <constraint firstItem="lAi-Sw-35i" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Wkl-T0-V6A"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="lAi-Sw-35i" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="gho-uZ-7mY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="QkM-2N-uPs"/>
+                    <connections>
+                        <segue destination="hAg-mU-Jjv" kind="show" identifier="TestSegue" id="x61-aX-MRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1927.2" y="-321.58920539730138"/>
+        </scene>
+        <!--SecondInStack-->
+        <scene sceneID="i55-of-hQh">
+            <objects>
+                <viewController title="SecondInStack" id="hAg-mU-Jjv" customClass="FirstViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BhE-2b-qZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="kZX-LA-6Bg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Og-Rs-55c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSI-S1-7mH">
+                                <state key="normal" title="Push Me Again"/>
+                                <connections>
+                                    <action selector="pushMeAction:" destination="hAg-mU-Jjv" eventType="touchUpInside" id="KfT-vm-jFK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qSI-S1-7mH" firstAttribute="centerY" secondItem="2Og-Rs-55c" secondAttribute="centerY" id="RHg-x7-BzM"/>
+                            <constraint firstItem="qSI-S1-7mH" firstAttribute="centerX" secondItem="2Og-Rs-55c" secondAttribute="centerX" id="wJu-h6-tMH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="gaJ-YU-soW" kind="show" identifier="SecondSegue" id="wdn-hp-kcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTS-Dv-4e2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2793" y="-322"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7hx-Jj-Xd6">
+            <objects>
+                <viewController id="gaJ-YU-soW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RrR-sw-lqv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uou-7P-1DE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4hT-1Y-HNV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHo-pw-Ory" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673" y="-322"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -80,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="988" y="389"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -93,13 +160,32 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="i0N-GL-ybR" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-164" y="1"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="ftB-Zs-aY4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i0N-GL-ybR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtw-kC-myN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="uCJ-Xf-jGs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbh-kt-PEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-321.58920539730138"/>
         </scene>
     </scenes>
     <resources>
