@@ -37,6 +37,14 @@ class FirstViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.view.layer.backgroundColor = UIColor(colorLiteralRed: 224.0, green: 235.0, blue: 235.0, alpha: 1.0).cgColor
+        //self.view.backgroundColor = UIColor.gray
+        self.view.layer.opacity = 0.85
+    }
+    
     
     func apiDataReturn() -> [afiModel] {
         let policy1 = Policy()
