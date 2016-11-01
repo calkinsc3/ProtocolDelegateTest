@@ -48,6 +48,3 @@ extension afiDataAccessDelegate {
     func onSuccessPolicy(returnedPolicies: [Policy]){}
     func onFailure() {}
 }
-
-
-
