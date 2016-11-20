@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270ADBA91DDF4672005709E1 /* ThirdViewController.swift */; };
 		94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */; };
 		94206E6D1DA65AF900A4E8C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */; };
 		94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270ADBA91DDF4672005709E1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		94206E671DA65AF900A4E8C0 /* ProtocolDelegateTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolDelegateTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */,
 				94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */,
+				270ADBA91DDF4672005709E1 /* ThirdViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */,
+				270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */,
 				94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */,
 				94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */,
 				94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */,
