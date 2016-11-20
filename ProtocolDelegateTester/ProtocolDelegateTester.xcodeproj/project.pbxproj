@@ -19,6 +19,10 @@
 		94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E821DA65CD300A4E8C0 /* PolicyModel.swift */; };
 		94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E881DA7AD6500A4E8C0 /* ClaimsDAO.swift */; };
 		94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */; };
+		94F81DBE1DE1D45300A403B2 /* StandardNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */; };
+		94F81DC01DE1D47200A403B2 /* AmfamNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */; };
+		94F81DC31DE1D9DD00A403B2 /* StandardNavStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F81DC11DE1D9DD00A403B2 /* StandardNavStack.storyboard */; };
+		94F81DC51DE1D9FE00A403B2 /* AmfamNavStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F81DC41DE1D9FE00A403B2 /* AmfamNavStack.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		94206E821DA65CD300A4E8C0 /* PolicyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyModel.swift; sourceTree = "<group>"; };
 		94206E881DA7AD6500A4E8C0 /* ClaimsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimsDAO.swift; sourceTree = "<group>"; };
 		94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimModel.swift; sourceTree = "<group>"; };
+		94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavController.swift; sourceTree = "<group>"; };
+		94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmfamNavViewController.swift; sourceTree = "<group>"; };
+		94F81DC21DE1D9DD00A403B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StandardNavStack.storyboard; sourceTree = "<group>"; };
+		94F81DC41DE1D9FE00A403B2 /* AmfamNavStack.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmfamNavStack.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 				94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */,
 				94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */,
 				270ADBA91DDF4672005709E1 /* ThirdViewController.swift */,
+				94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */,
+				94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				94206E701DA65AF900A4E8C0 /* Main.storyboard */,
+				94F81DC41DE1D9FE00A403B2 /* AmfamNavStack.storyboard */,
+				94F81DC11DE1D9DD00A403B2 /* StandardNavStack.storyboard */,
 				94206E731DA65AF900A4E8C0 /* Assets.xcassets */,
 				94206E751DA65AF900A4E8C0 /* LaunchScreen.storyboard */,
 			);
@@ -185,8 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F81DC51DE1D9FE00A403B2 /* AmfamNavStack.storyboard in Resources */,
 				94206E771DA65AF900A4E8C0 /* LaunchScreen.storyboard in Resources */,
 				94206E741DA65AF900A4E8C0 /* Assets.xcassets in Resources */,
+				94F81DC31DE1D9DD00A403B2 /* StandardNavStack.storyboard in Resources */,
 				94206E721DA65AF900A4E8C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +220,8 @@
 				94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */,
 				94206E831DA65CD300A4E8C0 /* PolicyModel.swift in Sources */,
 				94206E811DA65C7200A4E8C0 /* PolicyDAO.swift in Sources */,
+				94F81DC01DE1D47200A403B2 /* AmfamNavViewController.swift in Sources */,
+				94F81DBE1DE1D45300A403B2 /* StandardNavController.swift in Sources */,
 				94206E6D1DA65AF900A4E8C0 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +243,14 @@
 				94206E761DA65AF900A4E8C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94F81DC11DE1D9DD00A403B2 /* StandardNavStack.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94F81DC21DE1D9DD00A403B2 /* Base */,
+			);
+			name = StandardNavStack.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +360,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GAW47D4MAE;
 				INFOPLIST_FILE = ProtocolDelegateTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.c3.ProtocolDelegateTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.1;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -350,9 +376,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GAW47D4MAE;
 				INFOPLIST_FILE = ProtocolDelegateTester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.c3.ProtocolDelegateTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.1;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

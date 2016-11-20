@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HA1-Qx-3gp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Amfam Nav Stack-->
+        <scene sceneID="sTn-zs-yt9">
+            <objects>
+                <navigationController title="Amfam Nav Stack" id="HA1-Qx-3gp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Amfam Nav" image="second" id="H6T-TG-QTG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uE0-ur-yZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wlc-e3-rDU" kind="relationship" relationship="rootViewController" id="ZUO-fq-Xkh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PL9-un-7Mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="1879"/>
+        </scene>
+        <!--Amfam Nav View Controller-->
+        <scene sceneID="zDs-TC-78Z">
+            <objects>
+                <viewController id="wlc-e3-rDU" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZTk-Vn-7YQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttL-hD-Hcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nlc-VD-z3o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIS-9h-OlA">
+                                <rect key="frame" x="170" y="319" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="lTj-xg-oT5" kind="show" id="zzB-6D-AST"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amfam Custom iOS Navigation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-vq-q2I">
+                                <rect key="frame" x="16" y="94" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-Oa-rsw">
+                                <rect key="frame" x="16" y="151" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UEW-vq-q2I" firstAttribute="trailing" secondItem="nlc-VD-z3o" secondAttribute="trailingMargin" id="2QP-av-I5Q"/>
+                            <constraint firstItem="UEW-vq-q2I" firstAttribute="leading" secondItem="nlc-VD-z3o" secondAttribute="leadingMargin" id="4kZ-n4-wZF"/>
+                            <constraint firstItem="xDF-Oa-rsw" firstAttribute="trailing" secondItem="nlc-VD-z3o" secondAttribute="trailingMargin" id="EPs-1S-ODz"/>
+                            <constraint firstItem="fIS-9h-OlA" firstAttribute="centerX" secondItem="nlc-VD-z3o" secondAttribute="centerX" id="Ew9-Ic-lvw"/>
+                            <constraint firstItem="fIS-9h-OlA" firstAttribute="centerY" secondItem="nlc-VD-z3o" secondAttribute="centerY" id="ITm-nc-6a4"/>
+                            <constraint firstItem="xDF-Oa-rsw" firstAttribute="leading" secondItem="nlc-VD-z3o" secondAttribute="leadingMargin" id="P2R-vp-hs6"/>
+                            <constraint firstItem="UEW-vq-q2I" firstAttribute="top" secondItem="ZTk-Vn-7YQ" secondAttribute="bottom" constant="30" id="f8n-WP-U3T"/>
+                            <constraint firstItem="xDF-Oa-rsw" firstAttribute="top" secondItem="UEW-vq-q2I" secondAttribute="bottom" constant="30" id="y1n-93-P8j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HYA-Cj-Odc"/>
+                    <connections>
+                        <outlet property="vcTitle" destination="xDF-Oa-rsw" id="FiP-nU-Dib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxa-t9-g4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.8" y="1878.7106446776613"/>
+        </scene>
+        <!--First VC-->
+        <scene sceneID="Rgj-fV-nbI">
+            <objects>
+                <viewController title="First VC" id="lTj-xg-oT5" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tVL-E8-NAx"/>
+                        <viewControllerLayoutGuide type="bottom" id="CMb-2m-GCz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qK3-os-R41">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KR-Wa-Rxv">
+                                <rect key="frame" x="170" y="319" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="0hj-mG-Tlz" kind="show" id="3or-Gl-um9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P26-GS-YY7">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1KR-Wa-Rxv" firstAttribute="centerY" secondItem="qK3-os-R41" secondAttribute="centerY" id="PkD-ME-Quc"/>
+                            <constraint firstItem="1KR-Wa-Rxv" firstAttribute="centerX" secondItem="qK3-os-R41" secondAttribute="centerX" id="QSo-P6-qc1"/>
+                            <constraint firstItem="P26-GS-YY7" firstAttribute="leading" secondItem="qK3-os-R41" secondAttribute="leading" id="ael-rw-SJ1"/>
+                            <constraint firstItem="P26-GS-YY7" firstAttribute="top" secondItem="tVL-E8-NAx" secondAttribute="bottom" constant="30" id="g4j-rP-BIP"/>
+                            <constraint firstAttribute="trailing" secondItem="P26-GS-YY7" secondAttribute="trailing" id="iN3-f8-sKr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item First VC" id="4z5-eM-Gln">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Lw3-Eq-hha"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="P26-GS-YY7" id="swi-2h-Ucy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxG-xS-R6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="1883"/>
+        </scene>
+        <!--Second VC-->
+        <scene sceneID="Jj0-Ix-15c">
+            <objects>
+                <viewController title="Second VC" id="0hj-mG-Tlz" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Upl-ZM-eUf"/>
+                        <viewControllerLayoutGuide type="bottom" id="lDC-E5-XZR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4h8-yP-71e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-Yv-kC2">
+                                <rect key="frame" x="170" y="318" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="r56-eo-2Gg" kind="show" id="X2b-xg-QnX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-mF-d8G">
+                                <rect key="frame" x="16" y="94" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cc7-mF-d8G" firstAttribute="leading" secondItem="4h8-yP-71e" secondAttribute="leadingMargin" id="79B-fs-9SI"/>
+                            <constraint firstItem="Wg1-Yv-kC2" firstAttribute="centerY" secondItem="4h8-yP-71e" secondAttribute="centerY" id="Ezw-Px-jMl"/>
+                            <constraint firstItem="Wg1-Yv-kC2" firstAttribute="centerX" secondItem="4h8-yP-71e" secondAttribute="centerX" id="Hhn-K8-HOP"/>
+                            <constraint firstItem="Cc7-mF-d8G" firstAttribute="top" secondItem="Upl-ZM-eUf" secondAttribute="bottom" constant="30" id="QiA-uL-Q70"/>
+                            <constraint firstItem="Cc7-mF-d8G" firstAttribute="trailing" secondItem="4h8-yP-71e" secondAttribute="trailingMargin" id="zVG-IT-Mak"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Second VC" id="SPW-ud-1yY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="u2E-ie-bzZ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="Cc7-mF-d8G" id="POL-5F-W6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ff-Ce-xfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3849" y="1882"/>
+        </scene>
+        <!--Third VC-->
+        <scene sceneID="BOn-Zf-VFt">
+            <objects>
+                <viewController title="Third VC" id="r56-eo-2Gg" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4AU-Dt-ow6"/>
+                        <viewControllerLayoutGuide type="bottom" id="keC-aa-R68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wFt-DD-hv4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-jN-X6i">
+                                <rect key="frame" x="170" y="318" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="RLs-yy-ZmH" kind="show" id="ylk-gX-5KG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-IK-jKc">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mSC-IK-jKc" firstAttribute="top" secondItem="4AU-Dt-ow6" secondAttribute="bottom" constant="30" id="6So-Ii-jp7"/>
+                            <constraint firstAttribute="trailing" secondItem="mSC-IK-jKc" secondAttribute="trailing" id="7OJ-se-FjN"/>
+                            <constraint firstItem="0Tz-jN-X6i" firstAttribute="centerX" secondItem="wFt-DD-hv4" secondAttribute="centerX" id="GRK-uT-nrf"/>
+                            <constraint firstItem="mSC-IK-jKc" firstAttribute="leading" secondItem="wFt-DD-hv4" secondAttribute="leading" id="LbC-sp-gVv"/>
+                            <constraint firstItem="0Tz-jN-X6i" firstAttribute="centerY" secondItem="wFt-DD-hv4" secondAttribute="centerY" id="d6n-mV-8QP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Thrid VC" id="7DV-RM-uhH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pFM-HP-pWT"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="mSC-IK-jKc" id="xEJ-7T-IHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kB-5v-9x5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4765" y="1876"/>
+        </scene>
+        <!--Fourth VC-->
+        <scene sceneID="vhp-5B-IQ2">
+            <objects>
+                <viewController title="Fourth VC" id="RLs-yy-ZmH" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcA-Fy-V1L"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQa-KU-noX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cZM-Cj-g2N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN0-NT-5qf">
+                                <rect key="frame" x="170" y="319" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="8Dt-Mt-aAP" kind="show" id="KbJ-9w-U4m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kY-jd-djg">
+                                <rect key="frame" x="16" y="94" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4kY-jd-djg" firstAttribute="leading" secondItem="cZM-Cj-g2N" secondAttribute="leadingMargin" id="P4Q-XF-lah"/>
+                            <constraint firstItem="NN0-NT-5qf" firstAttribute="centerY" secondItem="cZM-Cj-g2N" secondAttribute="centerY" id="R3f-Pq-sav"/>
+                            <constraint firstItem="4kY-jd-djg" firstAttribute="top" secondItem="gcA-Fy-V1L" secondAttribute="bottom" constant="30" id="S6p-FE-LqO"/>
+                            <constraint firstItem="4kY-jd-djg" firstAttribute="trailing" secondItem="cZM-Cj-g2N" secondAttribute="trailingMargin" id="mgJ-Cu-Mpg"/>
+                            <constraint firstItem="NN0-NT-5qf" firstAttribute="centerX" secondItem="cZM-Cj-g2N" secondAttribute="centerX" id="y6V-ew-yph"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Fourth VC" id="aOO-W1-hUh">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ZnE-yU-7Gm"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="4kY-jd-djg" id="lTb-jl-V2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEs-rg-d2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5617" y="1872"/>
+        </scene>
+        <!--Fifth VC-->
+        <scene sceneID="uJ8-2H-mWG">
+            <objects>
+                <viewController title="Fifth VC" id="8Dt-Mt-aAP" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ac1-hx-2cS"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKi-FL-UI3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gay-U9-PKl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPC-NR-FCs">
+                                <rect key="frame" x="170" y="318" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="pYe-tn-owV" kind="show" id="wsM-RH-3Xo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6i-Id-ZL0">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CPC-NR-FCs" firstAttribute="centerX" secondItem="Gay-U9-PKl" secondAttribute="centerX" id="3cZ-Ns-hqI"/>
+                            <constraint firstItem="CPC-NR-FCs" firstAttribute="centerY" secondItem="Gay-U9-PKl" secondAttribute="centerY" id="Dy0-aT-GRF"/>
+                            <constraint firstItem="CPC-NR-FCs" firstAttribute="centerY" secondItem="Gay-U9-PKl" secondAttribute="centerY" id="MMF-Qa-vwi"/>
+                            <constraint firstItem="CPC-NR-FCs" firstAttribute="centerX" secondItem="Gay-U9-PKl" secondAttribute="centerX" id="Xzx-An-4Uz"/>
+                            <constraint firstAttribute="trailing" secondItem="I6i-Id-ZL0" secondAttribute="trailing" id="a89-c5-Cny"/>
+                            <constraint firstItem="I6i-Id-ZL0" firstAttribute="leading" secondItem="Gay-U9-PKl" secondAttribute="leading" id="aua-7R-xrr"/>
+                            <constraint firstItem="I6i-Id-ZL0" firstAttribute="top" secondItem="ac1-hx-2cS" secondAttribute="bottom" constant="30" id="d0R-Vf-wGo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Fifth VC" id="H3e-Ir-Tgj">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="yj7-Ob-VvW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="I6i-Id-ZL0" id="ARH-Ka-TVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5s-Dd-yAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6422" y="1874"/>
+        </scene>
+        <!--Sixth VC-->
+        <scene sceneID="2cR-si-8yg">
+            <objects>
+                <viewController title="Sixth VC" id="pYe-tn-owV" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XRr-d2-hB1"/>
+                        <viewControllerLayoutGuide type="bottom" id="w57-fE-Xt6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6cI-6y-hT4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxz-Cn-FRP">
+                                <rect key="frame" x="170" y="319" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="wjU-7i-vAs" kind="show" id="YWI-j8-uyo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-cP-Nu6">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o7o-cP-Nu6" secondAttribute="trailing" id="7cW-1t-yWF"/>
+                            <constraint firstItem="o7o-cP-Nu6" firstAttribute="top" secondItem="XRr-d2-hB1" secondAttribute="bottom" constant="30" id="GQi-f2-baw"/>
+                            <constraint firstItem="Hxz-Cn-FRP" firstAttribute="centerY" secondItem="6cI-6y-hT4" secondAttribute="centerY" id="gg1-ll-jL7"/>
+                            <constraint firstItem="Hxz-Cn-FRP" firstAttribute="centerX" secondItem="6cI-6y-hT4" secondAttribute="centerX" id="tW6-rv-gFS"/>
+                            <constraint firstItem="o7o-cP-Nu6" firstAttribute="leading" secondItem="6cI-6y-hT4" secondAttribute="leading" id="z6v-V5-ygV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Sixth VC" id="Qxo-KY-y7g">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Y5T-dj-o8r"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="o7o-cP-Nu6" id="vBa-VB-EhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hr-eM-5ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7212" y="1872"/>
+        </scene>
+        <!--Seventh VC-->
+        <scene sceneID="g7l-8O-DJZ">
+            <objects>
+                <viewController title="Seventh VC" id="wjU-7i-vAs" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T4L-3Y-bED"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rs5-NE-JVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dxG-LE-3V2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-5Y-3f0">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kJt-5Y-3f0" firstAttribute="top" secondItem="T4L-3Y-bED" secondAttribute="bottom" constant="30" id="7CO-Ip-J7V"/>
+                            <constraint firstItem="kJt-5Y-3f0" firstAttribute="leading" secondItem="dxG-LE-3V2" secondAttribute="leading" id="rjD-HF-MWp"/>
+                            <constraint firstAttribute="trailing" secondItem="kJt-5Y-3f0" secondAttribute="trailing" id="w4E-bE-va0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nav Item Seventh VC" id="7Fm-1j-UCI">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="hw4-OL-Plt"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="vcTitle" destination="kJt-5Y-3f0" id="3Pn-ST-JSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gha-oR-ht1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8073" y="1873"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
