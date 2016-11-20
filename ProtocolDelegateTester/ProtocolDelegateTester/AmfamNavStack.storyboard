@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="958" y="1879"/>
         </scene>
-        <!--Amfam Nav View Controller-->
+        <!--Root VC-->
         <scene sceneID="zDs-TC-78Z">
             <objects>
-                <viewController id="wlc-e3-rDU" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Root VC" id="wlc-e3-rDU" customClass="AmfamNavViewController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZTk-Vn-7YQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ttL-hD-Hcd"/>
