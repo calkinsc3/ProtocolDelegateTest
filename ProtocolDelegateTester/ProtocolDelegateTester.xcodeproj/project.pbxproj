@@ -76,6 +76,7 @@
 		94206E691DA65AF900A4E8C0 /* ProtocolDelegateTester */ = {
 			isa = PBXGroup;
 			children = (
+				94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */,
 				94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */,
 				94206E861DA65EA400A4E8C0 /* Model */,
 				94206E841DA65E8900A4E8C0 /* Controllers */,
@@ -92,7 +93,6 @@
 				94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */,
 				270ADBA91DDF4672005709E1 /* ThirdViewController.swift */,
 				94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */,
-				94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
