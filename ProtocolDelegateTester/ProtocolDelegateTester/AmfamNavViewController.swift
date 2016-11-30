@@ -24,6 +24,39 @@ class AmfamNavViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if self.isMovingFromParentViewController {
+            print("viewWillDisappear: isMovingFromParentViewController")
+        }
+        
+        if let vcsInNav = self.navigationController?.viewControllers {
+            print("viewWillDisappear: vcs in stack: \(vcsInNav.count)")
+            for vc in vcsInNav {
+                print("VCs in Nav = \(vc.title)")
+            }
+        }
+        
+    }
+    
+    
+//    
+//    override func willMove(toParentViewController parent: UIViewController?) {
+//        super.willMove(toParentViewController: parent)
+//        
+//        if let givenParent = parent, let parentTitle = givenParent.title {
+//            print("willMove: parent VCs name is  = \(parentTitle)")
+//        }
+//    }
+//    
+//    override func didMove(toParentViewController parent: UIViewController?) {
+//        if let givenParent = parent, let parentTitle = givenParent.title {
+//            print("didMove: parent VCs name is  = \(parentTitle)")
+//        }
+//    }
+
+    
 
     /*
     // MARK: - Navigation
