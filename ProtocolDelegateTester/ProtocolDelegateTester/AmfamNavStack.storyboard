@@ -59,6 +59,13 @@
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddb-OU-Iir">
+                                <rect key="frame" x="24" y="357" width="327" height="30"/>
+                                <state key="normal" title="Due Dates"/>
+                                <connections>
+                                    <segue destination="jJW-QK-JlA" kind="presentation" id="pqZ-r6-fk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,7 +75,10 @@
                             <constraint firstItem="fIS-9h-OlA" firstAttribute="centerX" secondItem="nlc-VD-z3o" secondAttribute="centerX" id="Ew9-Ic-lvw"/>
                             <constraint firstItem="fIS-9h-OlA" firstAttribute="centerY" secondItem="nlc-VD-z3o" secondAttribute="centerY" id="ITm-nc-6a4"/>
                             <constraint firstItem="xDF-Oa-rsw" firstAttribute="leading" secondItem="nlc-VD-z3o" secondAttribute="leadingMargin" id="P2R-vp-hs6"/>
+                            <constraint firstItem="Ddb-OU-Iir" firstAttribute="leading" secondItem="nlc-VD-z3o" secondAttribute="leadingMargin" constant="8" id="PQX-Qf-evQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ddb-OU-Iir" secondAttribute="trailing" constant="8" id="dRh-8M-Get"/>
                             <constraint firstItem="UEW-vq-q2I" firstAttribute="top" secondItem="ZTk-Vn-7YQ" secondAttribute="bottom" constant="30" id="f8n-WP-U3T"/>
+                            <constraint firstItem="Ddb-OU-Iir" firstAttribute="top" secondItem="fIS-9h-OlA" secondAttribute="bottom" constant="8" id="n57-Bv-qgP"/>
                             <constraint firstItem="xDF-Oa-rsw" firstAttribute="top" secondItem="UEW-vq-q2I" secondAttribute="bottom" constant="30" id="y1n-93-P8j"/>
                         </constraints>
                     </view>
@@ -80,6 +90,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxa-t9-g4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928.8" y="1878.7106446776613"/>
+        </scene>
+        <!--Date Controller-->
+        <scene sceneID="AJj-lL-37o">
+            <objects>
+                <viewController id="jJW-QK-JlA" customClass="DateController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Z4-W1-V5n"/>
+                        <viewControllerLayoutGuide type="bottom" id="BHn-tR-BNR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g02-NJ-db7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-GD-lAQ">
+                                <rect key="frame" x="0.0" y="391" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="502889126.47841901">
+                                    <!--2016-12-08 11:25:26 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="jJW-QK-JlA" eventType="valueChanged" id="lPJ-6f-QQc"/>
+                                </connections>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="7D6-Fq-yCl">
+                                <rect key="frame" x="24" y="90" width="327" height="178"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRk-CO-8dU">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKT-oy-rqU">
+                                        <rect key="frame" x="0.0" y="52.5" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleted Date Pass Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-XG-Z2g">
+                                        <rect key="frame" x="0.0" y="105" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date is with in 10 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyD-sw-skq">
+                                        <rect key="frame" x="0.0" y="157.5" width="327" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-Zc-nyH">
+                                <rect key="frame" x="311" y="28" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelMe:" destination="jJW-QK-JlA" eventType="touchUpInside" id="4d9-rn-BjF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7D6-Fq-yCl" firstAttribute="leading" secondItem="g02-NJ-db7" secondAttribute="leadingMargin" constant="8" id="1fJ-ch-XxF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7D6-Fq-yCl" secondAttribute="trailing" constant="8" id="5FH-LC-XBr"/>
+                            <constraint firstAttribute="trailing" secondItem="6KW-GD-lAQ" secondAttribute="trailing" id="Afh-N7-t6m"/>
+                            <constraint firstItem="BHn-tR-BNR" firstAttribute="top" secondItem="6KW-GD-lAQ" secondAttribute="bottom" constant="60" id="FeZ-6C-55E"/>
+                            <constraint firstItem="Dav-Zc-nyH" firstAttribute="top" secondItem="3Z4-W1-V5n" secondAttribute="bottom" constant="8" id="L1E-Gs-p2w"/>
+                            <constraint firstItem="Dav-Zc-nyH" firstAttribute="trailing" secondItem="g02-NJ-db7" secondAttribute="trailingMargin" id="e8i-XV-sFU"/>
+                            <constraint firstItem="6KW-GD-lAQ" firstAttribute="leading" secondItem="g02-NJ-db7" secondAttribute="leading" id="lvJ-g2-Wy2"/>
+                            <constraint firstItem="7D6-Fq-yCl" firstAttribute="top" secondItem="Dav-Zc-nyH" secondAttribute="bottom" constant="32" id="qCN-77-fo6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentDate" destination="LRk-CO-8dU" id="cQu-M4-yM1"/>
+                        <outlet property="datePass10Pass" destination="oyD-sw-skq" id="erk-T8-lRH"/>
+                        <outlet property="datePassDue" destination="MnQ-XG-Z2g" id="Cbj-1s-gBN"/>
+                        <outlet property="selectedDate" destination="mKT-oy-rqU" id="l7u-23-e4j"/>
+                        <outlet property="selectedDatePicker" destination="6KW-GD-lAQ" id="uDU-av-YUV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w21-2T-jUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.8" y="2651.4242878560722"/>
         </scene>
         <!--First VC-->
         <scene sceneID="Rgj-fV-nbI">
