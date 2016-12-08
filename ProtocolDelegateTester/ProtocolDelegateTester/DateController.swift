@@ -69,6 +69,16 @@ class DateController: UIViewController {
         return true
     }
     
+    func convertDateFromString(string: String) -> Date? {
+        
+        let myDateString = "2016-01-01"
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        return dateFormatter.date(from: myDateString)
+    }
+    
     
     
     
