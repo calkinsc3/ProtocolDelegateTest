@@ -23,9 +23,9 @@ class TableVewTestController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let container = self.containerVC {
-            container.view.isHidden = true
             self.containerView.isHidden = true
             self.containerView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+            //self.containerView.frame = self.view.frame
             
         }
     }
@@ -53,6 +53,10 @@ class TableVewTestController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TestCell", for: indexPath)
         cell.textLabel?.text = self.dataArray[indexPath.row]
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
 
