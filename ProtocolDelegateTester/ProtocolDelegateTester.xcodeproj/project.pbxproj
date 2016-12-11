@@ -21,6 +21,7 @@
 		94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */; };
 		94902BB71DF97A2600EE99D4 /* DateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94902BB61DF97A2600EE99D4 /* DateController.swift */; };
 		94BE7CB71DFC6F0F003C5ABB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE7CB61DFC6F0F003C5ABB /* WebViewController.swift */; };
+		94BE7CB91DFDE023003C5ABB /* TableVewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE7CB81DFDE023003C5ABB /* TableVewTestController.swift */; };
 		94F81DBE1DE1D45300A403B2 /* StandardNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */; };
 		94F81DC01DE1D47200A403B2 /* AmfamNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */; };
 		94F81DC31DE1D9DD00A403B2 /* StandardNavStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F81DC11DE1D9DD00A403B2 /* StandardNavStack.storyboard */; };
@@ -44,6 +45,7 @@
 		94206E8B1DA7B08400A4E8C0 /* ClaimModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClaimModel.swift; sourceTree = "<group>"; };
 		94902BB61DF97A2600EE99D4 /* DateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateController.swift; sourceTree = "<group>"; };
 		94BE7CB61DFC6F0F003C5ABB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		94BE7CB81DFDE023003C5ABB /* TableVewTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVewTestController.swift; sourceTree = "<group>"; };
 		94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardNavController.swift; sourceTree = "<group>"; };
 		94F81DBF1DE1D47200A403B2 /* AmfamNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmfamNavViewController.swift; sourceTree = "<group>"; };
 		94F81DC21DE1D9DD00A403B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StandardNavStack.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				94F81DBD1DE1D45300A403B2 /* StandardNavController.swift */,
 				94902BB61DF97A2600EE99D4 /* DateController.swift */,
 				94BE7CB61DFC6F0F003C5ABB /* WebViewController.swift */,
+				94BE7CB81DFDE023003C5ABB /* TableVewTestController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */,
 				94902BB71DF97A2600EE99D4 /* DateController.swift in Sources */,
 				270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */,
+				94BE7CB91DFDE023003C5ABB /* TableVewTestController.swift in Sources */,
 				94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */,
 				94206E8C1DA7B08400A4E8C0 /* ClaimModel.swift in Sources */,
 				94206E7F1DA65BB400A4E8C0 /* DataAccessProtocols.swift in Sources */,
