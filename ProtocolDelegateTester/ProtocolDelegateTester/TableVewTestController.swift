@@ -16,37 +16,34 @@ class TableVewTestController: UITableViewController {
     @IBOutlet weak var containerView: UIView!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let container = self.containerVC {
-            self.containerView.isHidden = true
-            self.containerView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-            //self.containerView.frame = self.view.frame
-            
-        }
+        self.containerView.isHidden = true
+        self.containerView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        //self.containerView.frame = self.view.frame
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.dataArray.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -59,20 +56,18 @@ class TableVewTestController: UITableViewController {
         self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
-
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "containerSegue" {
-            if let containerVC = segue.destination as? UIViewController {
-                self.containerVC = containerVC
-            }
+            self.containerVC = segue.destination
         }
         
     }
-
-
+    
+    
 }
