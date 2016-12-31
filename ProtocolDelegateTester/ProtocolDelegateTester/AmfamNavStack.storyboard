@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HA1-Qx-3gp">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -37,30 +37,30 @@
                         <viewControllerLayoutGuide type="bottom" id="ttL-hD-Hcd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nlc-VD-z3o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIS-9h-OlA">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="lTj-xg-oT5" kind="show" id="zzB-6D-AST"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amfam Custom iOS Navigation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-vq-q2I">
-                                <rect key="frame" x="16" y="94" width="343" height="27"/>
+                                <rect key="frame" x="20" y="94" width="374" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-Oa-rsw">
-                                <rect key="frame" x="16" y="151" width="343" height="21"/>
+                                <rect key="frame" x="20" y="151" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddb-OU-Iir">
-                                <rect key="frame" x="24" y="356.5" width="327" height="30"/>
+                                <rect key="frame" x="28" y="391" width="358" height="30"/>
                                 <state key="normal" title="Due Dates"/>
                                 <connections>
                                     <segue destination="jJW-QK-JlA" kind="presentation" id="pqZ-r6-fk7"/>
@@ -100,11 +100,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BHn-tR-BNR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g02-NJ-db7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-GD-lAQ">
-                                <rect key="frame" x="0.0" y="391" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="460" width="414" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="502889126.47841901">
                                     <!--2016-12-08 11:25:26 +0000-->
                                 </date>
@@ -113,28 +113,28 @@
                                 </connections>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="7D6-Fq-yCl">
-                                <rect key="frame" x="24" y="90" width="327" height="178"/>
+                                <rect key="frame" x="28" y="90" width="358" height="177.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRk-CO-8dU">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKT-oy-rqU">
-                                        <rect key="frame" x="0.0" y="52.5" width="327" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="52.333333333333343" width="358" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleted Date Pass Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnQ-XG-Z2g">
-                                        <rect key="frame" x="0.0" y="105" width="327" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="104.66666666666666" width="358" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date is with in 10 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyD-sw-skq">
-                                        <rect key="frame" x="0.0" y="157.5" width="327" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="157" width="358" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -142,7 +142,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-Zc-nyH">
-                                <rect key="frame" x="311" y="28" width="48" height="30"/>
+                                <rect key="frame" x="346" y="28" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelMe:" destination="jJW-QK-JlA" eventType="touchUpInside" id="4d9-rn-BjF"/>
@@ -173,6 +173,65 @@
             </objects>
             <point key="canvasLocation" x="1928.8" y="2651.4242878560722"/>
         </scene>
+        <!--Image Play Controller-->
+        <scene sceneID="JdS-aB-kxu">
+            <objects>
+                <viewController id="ddT-5k-jS9" customClass="ImagePlayController" customModule="ProtocolDelegateTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LS3-T3-c8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="uCm-j6-cu0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R8o-XC-j5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="SiH-eL-dWt">
+                                <rect key="frame" x="157" y="28" width="100" height="150"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="k1M-nE-oA0">
+                                <rect key="frame" x="170" y="306" width="74" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dY-Gq-qId">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                        <state key="normal" title="Round Me"/>
+                                        <connections>
+                                            <action selector="RoundImage:" destination="ddT-5k-jS9" eventType="touchUpInside" id="yeT-C7-Blr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekv-Cy-LLf">
+                                        <rect key="frame" x="0.0" y="47" width="74" height="30"/>
+                                        <state key="normal" title="Square Me"/>
+                                        <connections>
+                                            <action selector="SquareImage:" destination="ddT-5k-jS9" eventType="touchUpInside" id="OHp-2m-FFe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-rJ-fyt">
+                                        <rect key="frame" x="0.0" y="94" width="74" height="30"/>
+                                        <state key="normal" title="Cancel Me"/>
+                                        <connections>
+                                            <action selector="CancelMe:" destination="ddT-5k-jS9" eventType="touchUpInside" id="cZ7-fl-jdD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SiH-eL-dWt" firstAttribute="top" secondItem="LS3-T3-c8g" secondAttribute="bottom" constant="8" id="A9G-T8-Gd7"/>
+                            <constraint firstItem="k1M-nE-oA0" firstAttribute="centerY" secondItem="R8o-XC-j5Y" secondAttribute="centerY" id="euL-ge-vCc"/>
+                            <constraint firstItem="k1M-nE-oA0" firstAttribute="centerX" secondItem="R8o-XC-j5Y" secondAttribute="centerX" id="oGv-uM-FQQ"/>
+                            <constraint firstItem="SiH-eL-dWt" firstAttribute="centerX" secondItem="R8o-XC-j5Y" secondAttribute="centerX" id="uTK-rl-kBU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CancelMe" destination="AaF-rJ-fyt" id="JO8-Bd-hyJ"/>
+                        <outlet property="profileImage" destination="SiH-eL-dWt" id="eqh-ef-8Ie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5t-Vv-xO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="2651"/>
+        </scene>
         <!--First VC-->
         <scene sceneID="Rgj-fV-nbI">
             <objects>
@@ -182,27 +241,37 @@
                         <viewControllerLayoutGuide type="bottom" id="CMb-2m-GCz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qK3-os-R41">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KR-Wa-Rxv">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="0hj-mG-Tlz" kind="show" id="3or-Gl-um9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P26-GS-YY7">
-                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG5-At-d9H">
+                                <rect key="frame" x="28" y="403" width="358" height="30"/>
+                                <state key="normal" title="Image Play"/>
+                                <connections>
+                                    <segue destination="ddT-5k-jS9" kind="presentation" id="CAK-J0-9V3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZG5-At-d9H" firstAttribute="top" secondItem="1KR-Wa-Rxv" secondAttribute="bottom" constant="20" id="L8f-Ms-khp"/>
                             <constraint firstItem="1KR-Wa-Rxv" firstAttribute="centerY" secondItem="qK3-os-R41" secondAttribute="centerY" id="PkD-ME-Quc"/>
                             <constraint firstItem="1KR-Wa-Rxv" firstAttribute="centerX" secondItem="qK3-os-R41" secondAttribute="centerX" id="QSo-P6-qc1"/>
+                            <constraint firstItem="ZG5-At-d9H" firstAttribute="leading" secondItem="qK3-os-R41" secondAttribute="leadingMargin" constant="8" id="Qu4-BD-wR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZG5-At-d9H" secondAttribute="trailing" constant="8" id="TLY-Cr-MjE"/>
                             <constraint firstItem="P26-GS-YY7" firstAttribute="leading" secondItem="qK3-os-R41" secondAttribute="leading" id="ael-rw-SJ1"/>
                             <constraint firstItem="P26-GS-YY7" firstAttribute="top" secondItem="tVL-E8-NAx" secondAttribute="bottom" constant="30" id="g4j-rP-BIP"/>
                             <constraint firstAttribute="trailing" secondItem="P26-GS-YY7" secondAttribute="trailing" id="iN3-f8-sKr"/>
@@ -228,18 +297,18 @@
                         <viewControllerLayoutGuide type="bottom" id="lDC-E5-XZR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4h8-yP-71e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-Yv-kC2">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="r56-eo-2Gg" kind="show" id="X2b-xg-QnX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-mF-d8G">
-                                <rect key="frame" x="16" y="94" width="343" height="21"/>
+                                <rect key="frame" x="20" y="94" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -274,18 +343,18 @@
                         <viewControllerLayoutGuide type="bottom" id="keC-aa-R68"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wFt-DD-hv4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-jN-X6i">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="RLs-yy-ZmH" kind="show" id="ylk-gX-5KG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSC-IK-jKc">
-                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -320,18 +389,18 @@
                         <viewControllerLayoutGuide type="bottom" id="SQa-KU-noX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cZM-Cj-g2N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN0-NT-5qf">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="8Dt-Mt-aAP" kind="show" id="KbJ-9w-U4m"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kY-jd-djg">
-                                <rect key="frame" x="16" y="94" width="343" height="21"/>
+                                <rect key="frame" x="20" y="94" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -366,18 +435,18 @@
                         <viewControllerLayoutGuide type="bottom" id="RKi-FL-UI3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gay-U9-PKl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPC-NR-FCs">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="pYe-tn-owV" kind="show" id="wsM-RH-3Xo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6i-Id-ZL0">
-                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -414,18 +483,18 @@
                         <viewControllerLayoutGuide type="bottom" id="w57-fE-Xt6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6cI-6y-hT4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxz-Cn-FRP">
-                                <rect key="frame" x="170" y="318.5" width="35" height="30"/>
+                                <rect key="frame" x="189.66666666666666" y="353" width="35" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="wjU-7i-vAs" kind="show" id="YWI-j8-uyo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7o-cP-Nu6">
-                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -460,11 +529,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Rs5-NE-JVt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dxG-LE-3V2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-5Y-3f0">
-                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -490,6 +559,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ProfilePic" width="100" height="150"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

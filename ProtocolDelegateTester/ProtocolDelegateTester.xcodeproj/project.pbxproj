@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270ADBA91DDF4672005709E1 /* ThirdViewController.swift */; };
+		940B17031E17D493002E42CB /* ImagePlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B17021E17D493002E42CB /* ImagePlayController.swift */; };
 		94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */; };
 		94206E6D1DA65AF900A4E8C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */; };
 		94206E6F1DA65AF900A4E8C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6E1DA65AF900A4E8C0 /* SecondViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		270ADBA91DDF4672005709E1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		940B17021E17D493002E42CB /* ImagePlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePlayController.swift; sourceTree = "<group>"; };
 		94206E671DA65AF900A4E8C0 /* ProtocolDelegateTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolDelegateTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94206E6C1DA65AF900A4E8C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				94902BB61DF97A2600EE99D4 /* DateController.swift */,
 				94BE7CB61DFC6F0F003C5ABB /* WebViewController.swift */,
 				94BE7CB81DFDE023003C5ABB /* TableVewTestController.swift */,
+				940B17021E17D493002E42CB /* ImagePlayController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				94F81DBE1DE1D45300A403B2 /* StandardNavController.swift in Sources */,
 				94BE7CB71DFC6F0F003C5ABB /* WebViewController.swift in Sources */,
 				94206E6D1DA65AF900A4E8C0 /* FirstViewController.swift in Sources */,
+				940B17031E17D493002E42CB /* ImagePlayController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
