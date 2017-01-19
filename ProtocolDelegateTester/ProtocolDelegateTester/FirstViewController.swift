@@ -77,6 +77,22 @@ class FirstViewController: UIViewController {
         print("prepare")
     }
     
+    @IBAction func showToast(_ sender: Any) {
+        
+        let toastView = UIView(frame: CGRect(x: 0.0, y: self.view.frame.height - 100, width: self.view.frame.width, height: 50.0))
+        toastView.backgroundColor = UIColor.green
+        self.view.addSubview(toastView)
+        
+        UIView.transition(with: toastView, duration: 3.0, options: [.curveEaseIn], animations: {
+            toastView.isHidden = true
+        }) { (result) in
+            toastView.isHidden = false
+        }
+        
+    }
+    
+    
+    
 }
 
 extension FirstViewController: afiDataAccessDelegate {
@@ -89,5 +105,13 @@ extension FirstViewController: afiDataAccessDelegate {
         print("in OnFailure; no data")
     }
     
+}
+
+func delay(seconds: Double, completion:@escaping ()->()) {
+    let popTime = DispatchTime.now() + Double(Int64( Double(NSEC_PER_SEC) * seconds )) / Double(NSEC_PER_SEC)
+    
+    DispatchQueue.main.asyncAfter(deadline: popTime) {
+        completion()
+    }
 }
 
