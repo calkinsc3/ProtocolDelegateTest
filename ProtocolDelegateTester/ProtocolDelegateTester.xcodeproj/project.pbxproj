@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2701B3761E3120E500A0F391 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2701B3751E3120E500A0F391 /* ToastView.swift */; };
 		270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270ADBA91DDF4672005709E1 /* ThirdViewController.swift */; };
 		940B17031E17D493002E42CB /* ImagePlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B17021E17D493002E42CB /* ImagePlayController.swift */; };
 		94206E6B1DA65AF900A4E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94206E6A1DA65AF900A4E8C0 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2701B3751E3120E500A0F391 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		270ADBA91DDF4672005709E1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		940B17021E17D493002E42CB /* ImagePlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePlayController.swift; sourceTree = "<group>"; };
 		94206E671DA65AF900A4E8C0 /* ProtocolDelegateTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolDelegateTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				94206E781DA65AF900A4E8C0 /* Info.plist */,
+				2701B3751E3120E500A0F391 /* ToastView.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2701B3761E3120E500A0F391 /* ToastView.swift in Sources */,
 				94206E891DA7AD6500A4E8C0 /* ClaimsDAO.swift in Sources */,
 				94902BB71DF97A2600EE99D4 /* DateController.swift in Sources */,
 				270ADBAA1DDF4672005709E1 /* ThirdViewController.swift in Sources */,
