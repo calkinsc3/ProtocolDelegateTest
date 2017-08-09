@@ -40,6 +40,19 @@ class AmfamNavViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var backToTheBeginning: UIButton!
+    
+    
+    @IBAction func backToTheBeginning(_ sender: UIButton) {
+        
+        if let tabbar = self.tabBarController {
+            //tabbar.selectedIndex = 3
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        
+    }
+    
+    
     
 //    
 //    override func willMove(toParentViewController parent: UIViewController?) {
